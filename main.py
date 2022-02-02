@@ -16,7 +16,7 @@ with open("body.html", "r") as file_body:
 
 message.set_payload(body)
 
-password = 'Bendez549178' 
+password = 'senha' 
 
 s = smtplib.SMTP('smtp.gmail.com: 587')
 
