@@ -12,7 +12,7 @@ message['To'] = 'alexsander.pereira@icloud.com'
 message.add_header('Content-Type', 'text/html')
 
 with open("body.html", "r") as file_body:
-    body = file_body.read()
+        body = file_body.read()
 
 message.set_payload(body)
 
