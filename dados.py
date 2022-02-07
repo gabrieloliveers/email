@@ -1,20 +1,14 @@
 import email
 import json
-from tkinter import E
-import requests
+from msilib.schema import File
 
 def check_data():
 
-    data = requests.get('email') 
-    res = json.loads(data.json)
+    with open('data.json') as json_file: 
+        data = json.load(json_file) 
 
-    output = [email]
+data = '{"nome": "Gabriel"; "data nascimento": "03/06/1999"; "email": "gr.oliveira99@gmail.com"}'
 
+file = json.loads(data)
 
-    data = email
-    
-    for d in data.json:
-        for value in d.values():
-            if value==email:
-                print ('o email é: ', d['email'])
-            
+print(file['email']) 
