@@ -21,9 +21,11 @@ def idade(current_date, date_birthday):
         for line in json_file:
             user = json.loads(line)
             date_birthday = datetime.strptime(user["data_nascimento"], '%d/%m/%Y').date()
-    
-            date_today = datetime.strptime(current_date, "%Y")
-            date_niver = datetime.strptime(date_birthday, "%Y")
+            
+            niver = date_birthday.strftime('%d/%m/%Y')
+            
+            date_today = datetime.strftime(current_date, "%Y")
+            date_niver = datetime.strftime(niver, "%Y")
     
             print(date_today - date_niver)
     
