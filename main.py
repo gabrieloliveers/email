@@ -15,7 +15,7 @@ def send_email(emailto):
 
     message.set_payload(body)
 
-    password = 'Bendez5491781208' 
+    password = 'senha' 
 
     s = smtplib.SMTP('smtp.gmail.com: 587')
 
