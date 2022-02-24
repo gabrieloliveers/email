@@ -27,5 +27,5 @@ def idade(current_date, date_birthday):
             date_today = datetime.strftime(current_date, "%Y")
             date_niver = datetime.strftime(niver, "%Y")
     
-            print(date_today - date_niver)
+            print("A idade é:",date_today - date_niver)
     
